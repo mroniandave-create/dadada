@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(166, 75, 226);
+    border: 5px solid;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+h1 {
+    color: rgb(0, 1, 5);
+    text-align: center;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+
+.note {color: green;}
+#alert{color: red;}
+
+nav a {color: pink;}
+
+a:hover{text-decoration: underline;
+         font-size: 25px;}
+
+.bg1{ background-color: pink ;}
+
+:root {
+    --brand: #1f7a5c;
+    --space: 1rem;
+
+}
+.btn {
+    background: var(--brand);
+    padding: var(--space);
+}
+
+.container {
+display: grid;
+grid-template-areas: "header header"
+    "header1 header1"
+    "menu content"
+    "footer footer";
+grid-template-columns: 2fr 4fr;
+gap: 3px;
+background-color: blue;
+padding: 5px;
+}
+.container div {
+    background-color: aliceblue;
+    padding: 10px;
+}
+.container div.header {
+    grid-area: header;
+    text-align: center;
+}
+.container div.header1 {
+    grid-area: header1;
+    text-align: center;
+}
+
+.container div.menu {
+    grid-area: menu;
+}
+
+.container div.content {
+    grid-area: content;
+}
+
+.container div.footer {
+    grid-area: footer;
+    text-align: center;
+}
